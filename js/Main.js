@@ -260,3 +260,4 @@ function ConvertPlazo() {
         $("#Cantidad").val(Plazo);
     }
 }
+//Nada
