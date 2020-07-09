@@ -1,0 +1,177 @@
+﻿body {
+    font-size: large;
+    background-color: #d5f4e6;
+    font-family: Cambria;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #4040a1;
+    margin: 1em 0;
+    padding: 0;
+}
+
+a {
+    color: #80ced6;
+}
+
+label {
+    color: rgb(25,25,25);
+}
+
+tr:nth-child(even) {
+    background: #d5f4e6
+}
+
+tr:nth-child(odd) {
+    background: #eaf9f2
+}
+
+#Header {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    background-color: #80ced6;
+    border-top: solid 1px #4040a1;
+    width: 100%;
+}
+
+#Contenido {
+    margin: 20px auto;
+    display: flex;
+    width: 80%;
+}
+
+img {
+    width: 143px;
+    height: 70px;
+    position: relative;
+    top: 10px;
+}
+
+#logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#entradas, #resultados {
+    display: block;
+    width: 50%;
+    text-align: left;
+}
+
+#entradas {
+    margin-right: 20px;
+}
+
+.rentadiv {
+    display: inline;
+    padding: 16px;
+}
+
+#funciones {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.Entrada {
+    display: inline;
+    padding: 16px;
+}
+
+th {
+    margin: 0;
+    text-align: right;
+    border-bottom: solid 1px #80ced6;
+    background-color: #80ced6;
+    color: white;
+}
+
+input[type='number'], input[type='text'] {
+    width: 100%;
+    padding: 6px;
+    padding-left: 20px;
+    border: solid 2px #80ced6;
+    background-color: white;
+}
+
+input[type='number'] {
+    border-radius: 8px;
+}
+
+select {
+    border: solid 2px #80ced6;
+    border-radius: 8px;
+}
+
+#renta, #Intereses, #Inversion {
+    background-color: #d5f4e6;
+    padding: 6px;
+    padding-left: 16px;
+    border: none;
+    /*border-bottom: solid 2px #80ced6;*/
+}
+
+input[type='button'] {
+    width: 32%;
+    padding: 10px;
+    margin: 4px;
+    background-color: #80ced6;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 8px;
+}
+
+button {
+    height: 35px;
+    width: 32%;
+    padding: 8px;
+    margin: 4px;
+    background-color: #80ced6;
+    border: none;
+    color: white;
+    font-size: large;
+    border-radius: 8px;
+    position: relative;
+    box-shadow: 0px 2px lightgray;
+    overflow: hidden;
+}
+
+    button:hover {
+    }
+
+    button:active {
+        top: 1px;
+        box-shadow: 0px 0px lightgray;
+    }
+
+#tabla {
+    width: 100%;
+    min-height: 20%;
+}
+
+tbody {
+    max-height: 800px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: right;
+}
+
+footer {
+    background-color: #80ced6;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}

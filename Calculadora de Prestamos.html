@@ -1,0 +1,95 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Calculadora de prestamos</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link href="css/Site.css" rel="stylesheet" />
+    <script type="text/javascript" src="jQuery v2.2.4.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script src="js/Main.js"></script>
+</head>
+<body>
+    <div id='Header'>
+        <div id='logo'>
+            <img src='Logo.png' alt='logo' />
+            <h1 style="margin-left:8px;">Calculadora de prestamos</h1>
+        </div>
+        <hr />
+    </div>
+    <div id="Contenido">
+        <div id='entradas'>
+            <div clas='Entrada'>
+                <label>
+                    Monto:<select id="moneda">
+                        <option value="DOP">DOP</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </label>
+                <input id="Valor" type="number" />
+                <br />
+                <br />
+            </div>
+            <div clas='Entrada'>
+                <label>
+                    Tasa (%):<select id="Periodo">
+                        <option value="12">Anual</option>
+                        <option value="6">Semestral</option>
+                        <option value="3">Trimestral</option>
+                        <option value="2">bimestral</option>
+                        <option value="1">Mensual</option>
+                    </select>
+                </label>
+                <input id="Tasa" type="number" />
+                <br />
+                <br />
+            </div>
+            <div clas='Entrada'>
+                <label>
+                    Plazo :<select id="PeriodoPlazo">
+                        <option value="12">Años</option>
+                        <option value="1">Meses</option>
+                    </select>
+                </label>
+                <input id="Cantidad" type="number" />
+                <br />
+                <br />
+            </div>
+        </div>
+        <div id="resultados" style="opacity:0;">
+            <div class='rentadiv'>
+                <label>Valor Cuota:</label>
+                <input id="Renta" type="text" readonly />
+                <br />
+                <br />
+            </div>
+            <div class='rentadiv'>
+                <label>Intereses:</label>
+                <input id="Intereses" type="text" readonly />
+                <br />
+                <br />
+            </div>
+            <div class='rentadiv'>
+                <label>Inversion total:</label>
+                <input id="Inversion" type="text" readonly />
+                <br />
+                <br />
+            </div>
+        </div>
+    </div>
+    <div id='funciones'>
+        <button id="btn1"> <i class='glyphicon glyphicon-ok' aria-hidden='true'></i> Calcular</button>
+
+        <button id="btn2"> <i class='glyphicon glyphicon-th' aria-hidden='true'></i> Tabla de Amortizacion</button>
+
+        <button id="btn3"> <i class='glyphicon glyphicon-asterisk' aria-hidden='true'></i> Limpiar</button>
+        <div id="tabla">
+        </div>
+        <div id="opcsTabla">
+        </div>
+    </div>
+    <footer>
+        <p> <b>Lora Soft System 2017 </b><p>
+    </footer>
+</body>
+</html>
